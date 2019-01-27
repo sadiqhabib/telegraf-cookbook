@@ -57,20 +57,7 @@ default['telegraf']['chocolatey_source'] = 'https://www.chocolatey.org/api/v2/'
 default['telegraf']['chocolatey_options'] = ''
 
 default['telegraf']['outputs'] = {}
-
-default['telegraf']['inputs'] = {
-  'cpu' => {
-    'percpu' => true,
-    'totalcpu' => true,
-    'drop' => ['cpu_time'],
-  },
-  'disk' => {},
-  'io' => {},
-  'mem' => {},
-  'net' => {},
-  'swap' => {},
-  'system' => {},
-}
+default['telegraf']['inputs'] = {}
 
 default['telegraf']['perf_counters'] = {
   'Processor' => {
